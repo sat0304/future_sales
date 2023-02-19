@@ -6,9 +6,10 @@ https://colab.research.google.com/drive/1Fp9ibRTpqJvICQSNldpDHc6V2jEIwslS?usp=sh
 В данном задании необходимо предсказать
 покупки товаров в ноябре 2015 года на основе
 таблицы продаж за прошедшие 2 года с января
-2013 по октябрь 2015.1.1.
+2013 по октябрь 2015.
 
-Чтение исходных данных
+### 1.1.Чтение исходных данных
+
 ```
 from google.colab import drive
 drive.mount('/content/drive')
