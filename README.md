@@ -8,7 +8,7 @@ https://colab.research.google.com/drive/1Fp9ibRTpqJvICQSNldpDHc6V2jEIwslS?usp=sh
 таблицы продаж за прошедшие 2 года с января
 2013 по октябрь 2015.
 
-### 1.1.Чтение исходных данных
+### 1.1. Чтение исходных данных
 
 ```
 from google.colab import drive
