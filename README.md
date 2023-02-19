@@ -1,6 +1,7 @@
 ### Итоговый проект
 ```
 https://github.com/sat0304/future_sales
+https://colab.research.google.com/drive/1Fp9ibRTpqJvICQSNldpDHc6V2jEIwslS?usp=sharing
 ```
 В данном задании необходимо предсказать
 покупки товаров в ноябре 2015 года на основе
