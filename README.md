@@ -39,14 +39,20 @@ char = re.sub(r' +', ' ', char)
 4
 "ВО ВЛАСТИ НАВАЖДЕНИЯ (ПЛАСТ.)"
 0 40
-"ABBYY FineReader 12 Professional Edition Full... 1
+
+"ABBYY FineReader 12 Professional Edition Full
+1 76
+
 "В ЛУЧАХ СЛАВЫ (UNV)"
 2 40
+
 "ГОЛУБАЯ ВОЛНА (Univ)"
 3 40
+
 "КОРОБКА (СТЕКЛО)"
 4 40
-76
+
+
 ![image](https://user-images.githubusercontent.com/73336464/219937317-7dbb6813-5d3f-4c54-bf7b-b2242116621f.png)
 
 
