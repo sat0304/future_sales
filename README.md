@@ -7,10 +7,11 @@ https://github.com/sat0304/future_sales
 2013 по октябрь 2015.1.1.
 
 Чтение исходных данных
+```
 from google.colab import drive
 drive.mount('/content/drive')
 pandas.read_csv
-
+```
 В таблицах содержится информация о
 проданных товарах из категории: мелкая
 электронная аппаратура, лазерные диски,
@@ -26,10 +27,10 @@ D,0,40
 Содержит ненужный символ «D» в конце некоторых строк.
 
 Содержатся лишние пробелы между словами.
-
+```
 char = re.sub(r'^ +', '', char)
 char = re.sub(r' +', ' ', char)
-
+```
 После преобразования все записи в таблицах имеют одинаковую структуру
 
 0 "ВО ВЛАСТИ НАВАЖДЕНИЯ (ПЛАСТ.)"
@@ -96,11 +97,11 @@ train = train.loc[train.shop_id.isin(test["shop_id"].unique()), :]
 2.1. Создание модели
 
 Создание обучающих и проверочных таблиц:
-
+```
 X = train_final.drop(columns=[('item_cnt_day',
 'Nov2015')])
 y = train_final[('item_cnt_day', 'Nov2015')]
-
+```
 Применение
 LinearRegression
 и
@@ -109,15 +110,15 @@ KNeighborsRegressor
 Подстановка данных в полученную модель
 LinearRegression, так как показал результат
 проверки лучше:
-
+```
 MAE for LR: 0.00406212827439103
 MAX ERROR for LR 2.9925310646262346
 
 MAE for KNN: 0.14431950145995803
 MAX ERROR for KNN 13.42962962962963
-
+```
 2.2 Создание модели бустинга
-
+```
 CB_model = cb.CatBoostRegressor()
 LGB_model = lgb.LGBMRegressor()
 
@@ -126,3 +127,4 @@ MAE test dataset for Catboost: 0.004110309578309225
 
 LGB_model.fit(X_train, y_train)
 MAE test dataset for LGB: 0.004700377967638779
+```
