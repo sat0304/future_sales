@@ -113,10 +113,10 @@ KNeighborsRegressor
 LinearRegression, так как показал результат
 проверки лучше:
 ```
-MAE for LR: 0.00406212827439103
+MSE for LR: 0.00406212827439103
 MAX ERROR for LR 2.9925310646262346
 
-MAE for KNN: 0.14431950145995803
+MSE for KNN: 0.14431950145995803
 MAX ERROR for KNN 13.42962962962963
 ```
 ### 2.2 Создание модели бустинга
@@ -125,8 +125,8 @@ CB_model = cb.CatBoostRegressor()
 LGB_model = lgb.LGBMRegressor()
 
 CB_model.fit(X_train, y_train)
-MAE test dataset for Catboost: 0.004110309578309225
+MSE test dataset for Catboost: 0.004110309578309225
 
 LGB_model.fit(X_train, y_train)
-MAE test dataset for LGB: 0.004700377967638779
+MSE test dataset for LGB: 0.004700377967638779
 ```
